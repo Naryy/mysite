@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="select.css">
+</head>
+<body>
+    <header>
+        <div class="header-inner">
+            <div class="logo">
+              <h1>Logo</h1>
+            </div>
+            <nav class="header-nav">
+              <div class="header-nav-item">
+                <a class="header-button header-login">ユーザー</a>
+              </div>
+              <div class="header-nav-item">
+                <a class="header-button header-login">アイデア</a>
+              </div>
+            </nav>
+          </div>
+    </header>
+    
+    <div class="selectwrapper">
+        <div class="complexBox">
+            <p class="text">表示上の配置に関係なく、文章ボックスを先に書きます。</p>
+         </div>
+         <div class="complexBox">
+            <p class="text">表示上の配置に関係なく、文章ボックスを先に書きます。</p>
+         </div>
+         <div class="complexBox">
+            <p class="text">表示上の配置に関係なく、文章ボックスを先に書きます。</p>
+         </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bubbly-bg@1.0.0/dist/bubbly-bg.js"></script>
+    <script>
+        bubbly({
+            blur:15,
+            colorStart: '#194167',
+            colorStop: '#112144',
+            radiusFunc:() => 5 + Math.random() * 15,
+            angleFunc:() => -Math.PI / 2,
+            velocityFunc:() => Math.random() * 7.5,
+            bubbleFunc:() => `hsla(${200 + Math.random() * 50}, 100%, 65%, .1)`,
+            bubbles:350
+        });
+    </script>
+</body>
+</html>
